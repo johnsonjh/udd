@@ -113,7 +113,7 @@ int unlock;
     return(NOPE);
   }
   if (cp->c[57] == 0) {
-    printf("%s: Internal error!  Char in file is not locked!!\r\n");
+    printf("Internal error!  Char in file is not locked!!\r\n");
     lock_close(cwfp, FIL_CHR_LD, FIL_CHR_LK);
 #ifdef SIGTSTP
     signal(SIGTSTP, sigstop);

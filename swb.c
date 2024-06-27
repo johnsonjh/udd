@@ -43,7 +43,7 @@ char **argv;
   srandom(time(0));
   dfd = n_dlvl = -1;
   if (argc != 1) {
-    printf("%s: This command takes no options.\r\n");
+    printf("This command takes no options.\r\n");
     exit(1);
   }
   if (alevel == NOPE) {
