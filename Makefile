@@ -12,15 +12,15 @@ HDRS	      = cbt.h \
 		data.h \
 		defs.h
 
-CFLAGS	      = -g
+CFLAGS	     ?= -g
 
-LDFLAGS	      = -lm
+LDFLAGS	     ?= -lm
 
-LIBS	      =
+LIBS	     ?=
 
-LINKER	      = $(CC)
+LINKER	     ?= $(CC)
 
-MAKEFILE      = Makefile
+MAKEFILE     ?= Makefile
 
 OBJS	      = cbt.o \
 		cbt_cast.o \
@@ -67,9 +67,7 @@ SRCS	      = cbt.c \
 all:		$(PROGRAM)
 
 $(PROGRAM):     $(OBJS) $(LIBS)
-		@echo -n "Loading $(PROGRAM) ... "
-		@$(LINKER) $(OBJS) $(LIBS) -o $(PROGRAM) $(LDFLAGS)
-		@echo "done"
+		$(LINKER) $(OBJS) $(LIBS) -o $(PROGRAM) $(LDFLAGS)
 
 clean:;		rm -f $(PROGRAM) $(OBJS)
 
@@ -78,8 +76,7 @@ depend:;	@mkmf -f $(MAKEFILE) PROGRAM=$(PROGRAM) DEST=$(DEST)
 index:;		@ctags -wx $(HDRS) $(SRCS)
 
 install:	$(PROGRAM)
-		@echo Installing $(PROGRAM) in $(DEST)
-		@install -s $(PROGRAM) $(DEST)
+		install -s $(PROGRAM) $(DEST)
 
 print:;		@$(PRINT) $(HDRS) $(SRCS)
 
@@ -90,7 +87,7 @@ tags:           $(HDRS) $(SRCS); @ctags $(HDRS) $(SRCS)
 update:		$(DEST)/$(PROGRAM)
 
 $(DEST)/$(PROGRAM): $(SRCS) $(LIBS) $(HDRS) $(EXTHDRS)
-		@make -f $(MAKEFILE) DEST=$(DEST) install
+		$(MAKE) -f $(MAKEFILE) DEST=$(DEST) install
 ###
 cbt.o: defs.h cbt.h
 cbt_cast.o: defs.h cbt.h
