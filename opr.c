@@ -6,6 +6,7 @@
  * V5.1C (see VERSION file for history)
  *
  * Operator program version:  */
+
 #define VERS "OPR  V2.1C-03  26-Oct-89"
 
 #include "defs.h"

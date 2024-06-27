@@ -105,7 +105,6 @@ int dlvl_choose()
   return(tmp);
 }
 
-
 int dlvl_loadum(dno, lvl)
 
 int dno, lvl;

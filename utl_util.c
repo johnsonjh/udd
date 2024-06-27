@@ -61,7 +61,6 @@ int utl_populate()
   return(1536);
 }
 
-
 int utl_winner()
 
 {
@@ -89,7 +88,6 @@ int utl_winner()
     chr_lck_nuke(NUKE);
   return(YEP);
 }
-
 
 int utl_escape()
 
@@ -179,7 +177,6 @@ int utl_death()
   unix_exit(0);
 }
 
-
 void utl_stat()
 
 {
@@ -257,7 +254,6 @@ int lvl;
     z = 0.0;
   return((int) z);
 }
-
 
 int utl_chklvl()
 

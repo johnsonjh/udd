@@ -27,4 +27,3 @@ CBT_EXTERN int d, dead, dice, i1, i1_old, i2, in;
 CBT_EXTERN int autoevade, gone, hflag, mskip;
 CBT_EXTERN int ms1(), ms2(), ms3(), ms4(), cs1(), cs2(), cs3(), cs4();
 CBT_EXTERN struct slev fns[4];
-

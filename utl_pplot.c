@@ -67,7 +67,6 @@ char *s;
   return(ccpos);
 }
 
-
 int fni(r)                       /* analize room into u.i */
 
 int r;
@@ -115,7 +114,6 @@ int r, a;
     return(0);
   return(1);
 }
-
 
 char *fnp(a, b, p)                     /* put B in A at P */
 
@@ -168,7 +166,6 @@ int p;
   }
   return(a);
 }
-
 
 void utl_pplot(flag)
 
@@ -296,4 +293,3 @@ int flag;
   }
   printf("%s\n\r", obuf);
 }
-

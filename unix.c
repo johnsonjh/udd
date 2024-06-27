@@ -30,7 +30,6 @@ static struct termios out, cur;
 
 #endif
 
-
 void unix_init()
 
 {
@@ -105,7 +104,6 @@ void unix_tty_dgn()
 #endif
   TTY_SET(&cur);
 }
-
 
 char *month[] = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep",
 		  "Oct","Nov","Dec"};

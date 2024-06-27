@@ -289,7 +289,6 @@ int s;
   return(NOPE);
 }
 
-
 int ms4(s)
 
 int s;
@@ -410,7 +409,6 @@ int s;
   return(NOPE);
 }
 
-
 int cs1(s)
 
 int s;
@@ -453,7 +451,6 @@ int s;
   return(NOPE);
 }
 
-
 int cs2(s)
 
 int s;
@@ -488,7 +485,6 @@ int s;
   }
   return(NOPE);
 }
-
 
 int cs3(s)
 
@@ -541,7 +537,6 @@ int s;
   }
   return(NOPE);
 }
-
 
 int cs4(s)
 

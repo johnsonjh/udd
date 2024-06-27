@@ -24,7 +24,6 @@ int swb_ppnok()    /* NOPE=can't run program, MAYBE=can't Create, Run or
   return(YEP);
 }
 
-
 int swb_wiz()      /* 1=access to operator program and no password kill */
 		   /* 0=normal user */
 
@@ -34,8 +33,6 @@ int swb_wiz()      /* 1=access to operator program and no password kill */
   else
     return(0);
 }
-
-
 
 /* DO NOT EDIT BELOW THIS LINE */
 

@@ -119,7 +119,6 @@ struct dgnstr {
   unsigned char dmap[400];
 };
 
-
 /* pre-defined data structs in data.h */
 extern struct monst mm[NMONST];  /* monster matrix */
 extern int q[5][3];        /* direction vectors */
@@ -167,4 +166,3 @@ extern int utl_adj_ex(), utl_chklvl(), utl_death(), utl_escape(), utl_exp(),
   utl_populate(), utl_winner();
 extern void utl_adj_st(), utl_dtrp(), utl_eqp(), utl_inilvl(), utl_pplot(),
   utl_prtspl(), utl_sprog(), utl_stat(), utl_status();
-

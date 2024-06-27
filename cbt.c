@@ -20,7 +20,6 @@ struct slev fns[4] = {
   {ms4, cs4}
 };
 
-
 int cbt_main()
 
 {
@@ -416,5 +415,3 @@ s_top:
     return( (*fns[lvl - 1].cs)(spl) );
   }
 }
-
-

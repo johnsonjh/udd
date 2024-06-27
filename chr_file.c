@@ -63,7 +63,6 @@ void chr_rset()
   numc2 = numc = ntohl(numc);
 }
 
-
 struct chr *chr_scan()
 
 {
@@ -184,7 +183,6 @@ int lock;
   lock_close(cwfp, FIL_CHR_LD, FIL_CHR_LK);
   return(retval);
 }
-
 
 int chr_new()      /* save u. in file, lock it */
 

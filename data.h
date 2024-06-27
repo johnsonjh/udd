@@ -33,7 +33,6 @@ struct monst mm[NMONST] = {  /* 21 = NMONST */
   { "Dragon",        20,  9, 20,  8 }
 };
 
-
 int q[5][3] = {
   {  0,  0,  0 },
   {  0, -1,  0 },
@@ -77,7 +76,3 @@ char *sp[9][7] = {
   { "", "Holy word", "Finger of Death", "Blade barrier", "Raise dead",
       "", "" }
 };
-
-
-
-
