@@ -71,7 +71,7 @@ $(PROGRAM):     $(OBJS) $(LIBS)
 		@$(LINKER) $(OBJS) $(LIBS) -o $(PROGRAM) $(LDFLAGS)
 		@echo "done"
 
-clean:;		@rm -f $(OBJS)
+clean:;		rm -f $(PROGRAM) $(OBJS)
 
 depend:;	@mkmf -f $(MAKEFILE) PROGRAM=$(PROGRAM) DEST=$(DEST)
 
