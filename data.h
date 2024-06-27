@@ -50,7 +50,7 @@ char *spc[16] = { "  \\", "  /", "\\ /", "EXC", "PIT", "TPT",
                     "FNT", "ALT", "DGN", "DGN", "ORB", "ELV",
                     "THR", "SAF", "RCK" };
 
-char *class[] = { "Warrior", "Cleric", "Magician" };
+char *class1[] = { "Warrior", "Cleric", "Magician" };
 char *class2[] = { "Fighter", "Cleric", "Magician" };
 
 char *arm[] = { "Plate", "Chain", "Leather" };

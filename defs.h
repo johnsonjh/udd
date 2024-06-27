@@ -101,7 +101,7 @@ struct monst {
 };
 
 struct state {
-  char n[2][NAMELEN];                 /* name, secret name */
+  char n[2][NAMELEN];            /* name, secret name */
   long int c[65];                /* various stuff */
   int l[22][22];                 /* current level map */
   int i[9], i1[9];               /* room analysis */
@@ -121,12 +121,12 @@ struct dgnstr {
 
 /* pre-defined data structs in data.h */
 extern struct monst mm[NMONST];  /* monster matrix */
-extern int q[5][3];        /* direction vectors */
+extern int q[5][3];              /* direction vectors */
 extern char *vaz[5];             /* maze parts */
 extern char *maz[4];             /* more parts */
 extern char *st;                 /* stat names */
 extern char *spc[16];            /* specials */
-extern char *class[];            /* classes */
+extern char *class1[];           /* classes */
 extern char *class2[];           /* classes */
 extern char *arm[];              /* arm types */
 extern char *wep[];              /* weps */

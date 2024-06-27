@@ -152,7 +152,7 @@ int utl_death()
     }
   }
   printf("\r\n\n\nAnother%s mighty %s bites the dust.\r\n",
-         (u.c[8] < 4) ? " not so" : "", class[u.c[7]]);
+         (u.c[8] < 4) ? " not so" : "", class1[u.c[7]]);
   printf("\n\n\n\n");
   for (i = 0 ; i < 65 ; i++)
     u.c[i] = 0;
