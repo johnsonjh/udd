@@ -71,37 +71,35 @@ $(PROGRAM):     $(OBJS) $(LIBS)
 
 clean:;		rm -f $(PROGRAM) $(OBJS)
 
-depend:;	@mkmf -f $(MAKEFILE) PROGRAM=$(PROGRAM) DEST=$(DEST)
-
-index:;		@ctags -wx $(HDRS) $(SRCS)
-
 install:	$(PROGRAM)
 		install -s $(PROGRAM) $(DEST)
 
-print:;		@$(PRINT) $(HDRS) $(SRCS)
-
 program:        $(PROGRAM)
-
-tags:           $(HDRS) $(SRCS); @ctags $(HDRS) $(SRCS)
 
 update:		$(DEST)/$(PROGRAM)
 
 $(DEST)/$(PROGRAM): $(SRCS) $(LIBS) $(HDRS) $(EXTHDRS)
 		$(MAKE) -f $(MAKEFILE) DEST=$(DEST) install
 ###
-cbt.o: defs.h cbt.h
-cbt_cast.o: defs.h cbt.h
-cbt_hit.o: defs.h cbt.h
+# DO NOT DELETE
+cbt_cast.o: cbt.h
+cbt_cast.o: defs.h
+cbt_hit.o: cbt.h
+cbt_hit.o: defs.h
+cbt.o: cbt.h
+cbt.o: defs.h
 chr_file.o: defs.h
-dgn.o: defs.h
 dgn_nomove.o: defs.h
+dgn.o: defs.h
 dlvl_file.o: defs.h
+lock.o: defs.h
 opr.o: defs.h
 spc.o: defs.h
-swb.o: defs.h data.h
 swb_file.o: defs.h
-trs.o: defs.h
+swb.o: data.h
+swb.o: defs.h
 trs_cobjs.o: defs.h
+trs.o: defs.h
 unix.o: defs.h
 utl_pplot.o: defs.h
 utl_util.o: defs.h
