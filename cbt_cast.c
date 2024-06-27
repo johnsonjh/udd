@@ -256,7 +256,7 @@ int s;
       printf("%s is magic resistant!\007\r\n", mnam);
       break;
     }
-    if (roll(3,6) -u.c[8] + m1 > u.c[6]) 
+    if (roll(3,6) -u.c[8] + m1 > u.c[6])
       printf("The %s breaks free...\r\n", mnam);
     else {
       printf("The %s is held.  Press <CR> to kill, <LF> to evade: ", mnam);
@@ -356,7 +356,7 @@ int s;
       printf("The %s tried to get you through the flames!\r\n", mnam);
       tmp = mm[m].m * rnd() + m1;
       tmp *= 1.5;    /* XXX CDC - make more powerful than confuse */
-      printf("It gave itself %d damage point%s.\r\n", tmp, 
+      printf("It gave itself %d damage point%s.\r\n", tmp,
 	     (tmp == 1) ? "" :"s");
       m2 -= tmp;
       if (m2 < 1) {
@@ -426,9 +426,9 @@ int s;
     break;
   case 3:          /* cure light */
     u.c[11] += roll(1,6) + 1;
-    if (u.c[11] > u.c[10]) 
+    if (u.c[11] > u.c[10])
       u.c[11] = u.c[10];
-    printf("You now have %d hit point%s.\r\n", u.c[11], 
+    printf("You now have %d hit point%s.\r\n", u.c[11],
 	   (u.c[11] == 1) ? "" : "s");
     break;
   case 4:          /* turn undead */
@@ -438,7 +438,7 @@ int s;
       printf("The %s feels insulted at being called undead.\r\n", mnam);
       break;
     }
-    if (roll(3,6) + 3 + m1 - u.c[8] > u.c[3]) 
+    if (roll(3,6) + 3 + m1 - u.c[8] > u.c[3])
       printf("The %s listens with deaf ears.\r\n", mnam);
     else {
       printf("The %s runs in terror!\r\n", mnam);
@@ -509,7 +509,7 @@ int s;
       printf("The %s feels insulted at being called undead.\r\n", mnam);
       break;
     }
-    if (roll(3,6) + 2 > u.c[3]) 
+    if (roll(3,6) + 2 > u.c[3])
       printf("The %s scorns your words.\r\n", mnam);
     else {
       printf("The %s is dispelled into thin air!\r\n", mnam);

@@ -108,7 +108,7 @@ opr_main()
 	buf[strlen(buf) - 1] = 0;
 	if (strlen(buf) < 40)
 	  strcat(buf,"                                        ");
-	if (tmp % 2 == 1) 
+	if (tmp % 2 == 1)
 	  for (lcv = 1; lcv <= 39 ; lcv += 2) {
 	    switch(buf[lcv]) {
 	    case ' ':
@@ -144,10 +144,10 @@ opr_main()
 	      printf("opr: Warning: line %d, unknown char!\r\n", tmp);
 	    }
 	    if (buf[lcv+1] != ' ') {
-	      if (buf[lcv+1] < 'a' || buf[lcv+1] > 'o') 
+	      if (buf[lcv+1] < 'a' || buf[lcv+1] > 'o')
 		printf("opr: Warning: line %d, unknown special!\r\n", tmp);
 	      else
-		dd.dmap[((tmp - 1) / 2) * 20 + lcv / 2] |= 
+		dd.dmap[((tmp - 1) / 2) * 20 + lcv / 2] |=
 		  (buf[lcv+1] - 'a' + 1) * 16;
 	    }
 	  }
@@ -162,7 +162,7 @@ opr_main()
       }
       printf("Yes\r\n");
       printf("Overwriting...\r\n");
-      while ((tmp = lock_open(FIL_LVL, O_RDWR, FIL_LVL_LD, 
+      while ((tmp = lock_open(FIL_LVL, O_RDWR, FIL_LVL_LD,
 			    FIL_LVL_LK, 60)) < 0 &&
 	     (tmp == -2)) {
 	printf("[File locked - sleeping]\r\n");
@@ -172,7 +172,7 @@ opr_main()
 	printf("opr: error accessing level file %s!\r\n", FIL_LVL);
 	break;
       }
-      lseek(tmp, sizeof(n_dlvl) + (dgn - 1) * (DNAM_SZ + sizeof(dd.dstart) + 
+      lseek(tmp, sizeof(n_dlvl) + (dgn - 1) * (DNAM_SZ + sizeof(dd.dstart) +
 					       8000) + DNAM_SZ
 	    + sizeof(dd.dstart) + 400 * (lvl - 1), L_SET);
       write(tmp, dd.dmap, 400);
@@ -218,27 +218,27 @@ opr_main()
       }
       dlvl_loadum(dgn, lvl);
       for (tmp = 1; tmp <= 20 ; tmp++) {
-	for (lcv = 1 ; lcv <= 20; lcv++) 
+	for (lcv = 1 ; lcv <= 20; lcv++)
 	  if (tmp2 == 'X')
-	    fprintf(fp, " %1.1s"," -=~" + 
+	    fprintf(fp, " %1.1s"," -=~" +
 		    ((dd.dmap[(tmp - 1) * 20 + (lcv - 1)] / 4) & 3));
 	  else
-	    fprintf(fp," %s", 
+	    fprintf(fp," %s",
 		    (((dd.dmap[(tmp - 1) * 20 + (lcv - 1)] / 4) & 3) == 1) ?
 		    "_" : " ");
 	fprintf(fp, "\r\n");
 	for (lcv = 1 ; lcv <= 20 ; lcv++) {
-	  fprintf(fp,"%1.1s", " |!:" + 
+	  fprintf(fp,"%1.1s", " |!:" +
 		  (dd.dmap[(tmp - 1) * 20 + (lcv - 1)] & 3));
 	  if (dd.dmap[(tmp - 1) * 20 + (lcv - 1)] / 16 == 0)
 	    fprintf(fp," ");
 	  else
-	    fprintf(fp,"%1.1s", " abcdefghijklmnop" + 
+	    fprintf(fp,"%1.1s", " abcdefghijklmnop" +
 		    dd.dmap[(tmp - 1) * 20 + (lcv - 1)] / 16);
 	}
 	fprintf(fp, "| %d\r%s", tmp, (tmp2 == 'X') ? "\n" : "");
       }
-      if (tmp2 == 'X') 
+      if (tmp2 == 'X')
 	fprintf(fp, " - - - - - - - - - - - - - - - - - - - -\r\n");
       else
 	fprintf(fp, " _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\r\n\n");
@@ -314,9 +314,9 @@ opr_main()
     case 'D':
       if (n_dlvl < 0)
 	dlvl_init();
-      if (tmp2 == 'S') 
+      if (tmp2 == 'S')
 	printf("Set dungeon\r\n");
-      else 
+      else
 	printf("Change number of dungeons\r\n");
       printf("Current number of dungeons is %d.\r\n", n_dlvl);
       printf("%sumber [1..9, or anything else to abort] : ",
@@ -342,7 +342,7 @@ opr_main()
         if (!fgets(buf, DNAM_SZ - 1, stdin))
           strcpy(buf, "\n");
 	buf[strlen(buf) - 1] = 0;
-	if (buf[0] != 0) 
+	if (buf[0] != 0)
 	  strcpy(dd.dnam, buf);
 	printf("The start code is formed by:\r\n");
 	printf("\t   code = 20 * (start_row - 1) + (start_col - 1)\r\n");
@@ -361,7 +361,7 @@ opr_main()
 	printf("Setting %s's start code to %d.\r\n", dd.dnam, tmp);
 	unix_tty_dgn();
       }
-      while ((tmp3 = lock_open(FIL_LVL, O_RDWR, FIL_LVL_LD, 
+      while ((tmp3 = lock_open(FIL_LVL, O_RDWR, FIL_LVL_LD,
 			    FIL_LVL_LK, 60)) < 0 &&
 	     (tmp3 == -2)) {
 	printf("[File locked - sleeping]\r\n");
@@ -415,7 +415,7 @@ opr_main()
 	break;
       }
       close(tmp3);
-      while ((tmp3 = lock_open(buf, O_RDWR, FIL_CHR_LD, 
+      while ((tmp3 = lock_open(buf, O_RDWR, FIL_CHR_LD,
 			     FIL_CHR_LK, 60)) < 0 &&
 	     (tmp3 == -2)) {
 	printf("[File locked - sleeping]\r\n");
@@ -510,7 +510,7 @@ opr_main()
 	break;
       }
       printf("Yes\r\n");
-      if (chr_save(YEP) == NOPE) 
+      if (chr_save(YEP) == NOPE)
 	printf("It failed!\r\n\n");
       else {
 	printf("opr: Done!\r\n\n");
@@ -541,13 +541,13 @@ opr_main()
 	break;
       }
       tmp = atoi(buf);
-      if (tmp < 0 || (tmp2 == 'A' && tmp > 64) || 
+      if (tmp < 0 || (tmp2 == 'A' && tmp > 64) ||
 	             (tmp2 != 'A' && tmp > 1)) {
 	printf("Out of range!\r\n");
 	break;
       }
       printf("Current value is:\r\n");
-      if (tmp2 == 'A') 
+      if (tmp2 == 'A')
 	printf("  u.c[%d] = %d\r\n", tmp, u.c[tmp]);
       else
 	printf("  u.n[%d] = %s\r\n", tmp, u.n[tmp]);

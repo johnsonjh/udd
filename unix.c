@@ -118,7 +118,7 @@ long dat;
   struct tm *t;
   static char buf[12];
   t = localtime(&dat);
-  sprintf(buf, "%02d-%s-%02.2d", t->tm_mday, month[t->tm_mon], 
+  sprintf(buf, "%02d-%s-%02.2d", t->tm_mday, month[t->tm_mon],
           t->tm_year % 100);
   return(buf);
 }

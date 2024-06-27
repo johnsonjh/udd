@@ -47,7 +47,7 @@ int cmd;
     case 5:
       utl_pplot(NOPE);
       return(NOPE);
-    case 6: 
+    case 6:
       printf("Let me die!\r\n");
       printf("Are you sure? ");
       in = getchar();
@@ -66,7 +66,7 @@ int cmd;
       if (in == 'y' || in == 'Y') {
         printf("Yes\r\nSaving your position sire...\r\n");
         u.c[64] = XXX_NORM;
-        return(chr_save(YEP)); 
+        return(chr_save(YEP));
       } else
       printf("No\r\n");
       u.c[64] = DGN_PROMPT;
@@ -88,7 +88,7 @@ int cmd;
         return(utl_death());
       in = roll(1,10);
       if (in < 4)
-        u.c[22+in] = 0; 
+        u.c[22+in] = 0;
       else
         if (in < 7)
           u.c[50 + in - 3] = 0;

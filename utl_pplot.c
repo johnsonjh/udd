@@ -129,7 +129,7 @@ int p;
   if (p > la)                          /* off the edge ? */
     strcat(a, b);
   else if ((p - 1) + lb > la) {        /* will go off end? */
-    strcpy(a + (p - 1), b); 
+    strcpy(a + (p - 1), b);
     return(a);
   } else {                             /* must be all the way in a */
     for (lcv = 0 ; lcv < lb ; lcv++)
@@ -137,7 +137,7 @@ int p;
   }
   return(a);
 }
-    
+
 char *fnp1(a, b, p)                    /* cond put B in A at P */
 
 char *a, *b;
@@ -160,7 +160,7 @@ int p;
 	if (*ap != ' ') {
 	  ap++;
 	  b++;
-	} else 
+	} else
 	  *ap++ = *b++;
       }
     if (null != 0)
@@ -193,7 +193,7 @@ int flag;
   }
   printf("\r\n\n");
   for (lcv = -1 ; lcv <= 2 ; lcv++)
-    for (lcv3 = -1 ; lcv3 <= 2 ; lcv3++) 
+    for (lcv3 = -1 ; lcv3 <= 2 ; lcv3++)
       if (x+lcv > 21 || y+lcv3 > 21)
 	u.p[lcv+2][lcv3+2] = 0;
       else
@@ -212,7 +212,7 @@ int flag;
     strcat(tbuf2, fnd2(1,2));
     strcat(tbuf2, "     ");
     strcat(tbuf2, fnd2(1,3));
-    if (u.c[37] > 0) 
+    if (u.c[37] > 0)
       if (fni1(u.p[1][2], 9) != 0)     /* light spell */
 	tbuf2[9] = '*';
     optout(tbuf);
@@ -257,7 +257,7 @@ int flag;
     fnp(tbuf, "$", 11);
   if (u.i[6] == 1)
     fnp(tbuf, "#", 11);
-  if ((u.i[6] | u.i[7]) == 0 && u.i[5] != 0) 
+  if ((u.i[6] | u.i[7]) == 0 && u.i[5] != 0)
     fnp(tbuf,spc[u.i[5] - 1], 9);
   optout(tbuf);
   optout(tbuf2);

@@ -11,7 +11,7 @@
 /* should not be used by external stuff */
 
 #ifdef CBTMAIN
-#define CBT_EXTERN 
+#define CBT_EXTERN
 #else
 #define CBT_EXTERN extern
 #endif

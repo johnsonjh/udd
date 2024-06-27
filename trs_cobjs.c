@@ -62,7 +62,7 @@ int trs_obj()
       printf("\r\n");
       if (tmp < 0)
 	tmp = 10;
-      if (tmp == '\n') 
+      if (tmp == '\n')
 	break;
       if (tmp != '\r') {
 	printf("THINK STUPID\007!\r\n");
@@ -79,7 +79,7 @@ int trs_obj()
 	break;
       }
       u.c[22]++;
-      printf("You have found a %s%s +%d.\r\n", 
+      printf("You have found a %s%s +%d.\r\n",
 	     (u.c[22] > 0) ? "Magic " : "", wep[u.c[7]], u.c[22]);
       break;
     case 2:        /* arm */
@@ -87,7 +87,7 @@ int trs_obj()
 	tmp = u.c[23] + 1;
       else
 	tmp = u.c[23];
-      printf("You have found %s%s Armor +%d.\r\n", 
+      printf("You have found %s%s Armor +%d.\r\n",
 	     (tmp > 0) ? "Magic " : "", arm[u.c[7]], tmp);
       if (tmp == u.c[23])
 	printf("Too bad you already have one.\r\n");
@@ -105,7 +105,7 @@ int trs_obj()
 	printf("Too bad you can't use it!\r\n");
 	break;
       }
-      if (u.c[24] == tmp) 
+      if (u.c[24] == tmp)
 	printf("You already have one of those.\r\n");
       u.c[24] = tmp;
       break;
@@ -123,7 +123,7 @@ int trs_obj()
 	printf("BRAINLESS\007!\r\n");
 	goto top4;
       }
-      if (rnd() > 0.5) 
+      if (rnd() > 0.5)
 	utl_adj_st();
       else
 	if (utl_adj_ex() == YEP)

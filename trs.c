@@ -13,7 +13,7 @@
 #define TRS_NORM  0
 #define TRS_CHEST 1
 #define TRS_OBJ   2
-  
+
 int trs_main()
 
 {
@@ -43,7 +43,7 @@ int trs_main()
     if (tmp <= 30) {
       printf("You see a pile of silver...\r\n");
       trs = 100 * rnd() * l + 10;
-    } else 
+    } else
       if (tmp <= 40) {
 	printf("You see a pile of gold...\r\n");
 	trs = 500 * rnd() * l + 50;

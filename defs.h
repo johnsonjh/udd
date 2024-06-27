@@ -23,13 +23,13 @@
  * state after a SIGHUP (default=undef).
  */
 
-#undef  L_STRICT 
+#undef  L_STRICT
 
 /*
  * file names: FIL_XXX     - full path of file
- *             FIL_XXX_LK  - if you are using links for locking this is the 
+ *             FIL_XXX_LK  - if you are using links for locking this is the
  *                           lock file name, otherwise it is ignored.
- *             FIL_XXX_LD  - if you are using links for locking this is the 
+ *             FIL_XXX_LD  - if you are using links for locking this is the
  *                           lock file directory, otherwise it is ignored.
  * files: CHR - Character file
  *        NOT - message of the day
@@ -158,7 +158,7 @@ extern int lock_open(), lock_close();
 extern int ms1(), ms2(), ms3(), ms4();
 extern int opr_main(), optout(), roll();
 extern void sighup(), sigstop(), swb_note();
-extern int spc_main(), swb_ppnok(), swb_wiz(), trs_chest(), trs_main(), 
+extern int spc_main(), swb_ppnok(), swb_wiz(), trs_chest(), trs_main(),
   trs_obj();
 extern char *unix_date();
 extern void unix_exit(), unix_init(), unix_tty_cook(), unix_tty_dgn(),

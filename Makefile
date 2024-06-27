@@ -92,19 +92,19 @@ update:		$(DEST)/$(PROGRAM)
 $(DEST)/$(PROGRAM): $(SRCS) $(LIBS) $(HDRS) $(EXTHDRS)
 		@make -f $(MAKEFILE) DEST=$(DEST) install
 ###
-cbt.o: defs.h cbt.h 
-cbt_cast.o: defs.h cbt.h 
+cbt.o: defs.h cbt.h
+cbt_cast.o: defs.h cbt.h
 cbt_hit.o: defs.h cbt.h
-chr_file.o: defs.h 
+chr_file.o: defs.h
 dgn.o: defs.h
 dgn_nomove.o: defs.h
-dlvl_file.o: defs.h 
-opr.o: defs.h 
-spc.o: defs.h 
-swb.o: defs.h data.h 
+dlvl_file.o: defs.h
+opr.o: defs.h
+spc.o: defs.h
+swb.o: defs.h data.h
 swb_file.o: defs.h
-trs.o: defs.h 
-trs_cobjs.o: defs.h 
-unix.o: defs.h 
+trs.o: defs.h
+trs_cobjs.o: defs.h
+unix.o: defs.h
 utl_pplot.o: defs.h
-utl_util.o: defs.h 
+utl_util.o: defs.h

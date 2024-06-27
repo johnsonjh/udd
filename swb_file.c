@@ -49,7 +49,7 @@ char *msg, *file;
   if ((fp = fopen(file, "r")) == NULL)
     return;
   printf("%s\r\n", msg);
-  while (fgets(buf, BUFSIZ, fp) != NULL) 
+  while (fgets(buf, BUFSIZ, fp) != NULL)
     if (buf[0] != '!' || wiz != 0)
       printf("%s\r", buf);
   printf("\n");

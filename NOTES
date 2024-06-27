@@ -1,0 +1,882 @@
+              <<< 501CLB::EIS4$DISK:[NOTES$LIBRARY]GAMES.NOTE;1 >>>
+                             -< Welcome to GAMES >-
+================================================================================
+Note 4.0                               DND                            27 replies
+ACE::BREWER                                          13 lines  21-MAY-1984 19:57
+--------------------------------------------------------------------------------
+
+        As a recreational game player I am glad to see this file. I mourn
+the day when DND was stripped from the net. (As an orb-finder I was
+about to attempt the other dungeons).
+
+        Perhaps it would be wise for some of the games to change names before a
+similar occurance happens on other games. Although Startrek and Qix games
+on the net dont impact sales of their parent replicas, Id hate to see
+someone take action against DEC causing these and others with proprietary
+names vanish.
+
+        Is there a computer in existance that has not had a STARTREK game on it?
+
+        -John
+
+================================================================================
+Note 4.1                               DND                               1 of 27
+AURORA::HALLYB                                        4 lines  23-MAY-1984 10:06
+--------------------------------------------------------------------------------
+
+By teh way, is there an orb in every dungeon, or do you have to pick the
+right one?...
+
+            John
+
+================================================================================
+Note 4.2                               DND                               2 of 27
+PSYCHE::MCVAY                                        30 lines  25-MAY-1984 12:28
+--------------------------------------------------------------------------------
+
+ Perhaps a general comment about the legal aspects of games and copyrights
+is pertinent here...
+
+ If you have access to the latest issue of ACM (June 1984), you will see
+a big discussion on copyrights.  This includes games and a lot of other
+software.  However, this article seems to confirm one of my own thoughts
+on the subject.  That is: the games currently available, including DND,
+are valid public domain because they were never copyrighted nor protected
+properly.
+
+ I'm basing this claim on the ruling of courts concerning "trade secrets".
+A trade secret is anything that gives you a competitive advantage over
+the competition, such as an idea or algorithm or particular way of doing
+things.  As this applies to computers, game ideas would be trade secrets
+because they are ideas--and what is being argued here is not the code
+itelf, but rather the appearance and general flavor of the game on the
+computer.
+
+ Here's the zinger: violations of trade secrets are prosecutable offenses
+ONLY if you can prove that you took all reasonable precautions to protect
+the secret.  Since the games are/were widely available on the net, there
+would be a tough time here proving proprietary rights--particularly when
+so many of the users and system managers had them on their machines
+without being informed of any possible copyright infringements.
+
+ However, I'm not a lawyer.  At the very least, DEC could get into a
+nasty battle, possibly with a vendor/OEM.  But I am curious about what
+the legal status is, here.  It strikes me that someone overreacted.
+
+ Moral: look to your own software protection...
+
+================================================================================
+Note 4.3                               DND                               3 of 27
+HUMAN::BURROWS                                       49 lines  25-MAY-1984 23:14
+--------------------------------------------------------------------------------
+
+Ghod, but I hate writing this. What Pete says about trade secrets may in
+fact be true but that doesn't help in the case of DND/DECquest.
+
+Standard disclaimer: I'm not a lawyer, and am not dispensing legal advice.
+
+The problem with DND is three-fold in origin. It's practically a catalogue
+of the standard mistakes.
+
+First, several versions of the game abused the "Dungeons and Dragons"
+trademark of TSR inc. Several of us who worked on the sources at one time
+or another cleaned it up, but as new hackers joined the fray, it cropped
+up again. [Lesson: don't put trademarks into your games.] Beyond the direct
+abuse it might be argued that it is too close to the ideas and rules of
+D&D;, but I suspect that it is enough different to be safe.
+
+Second, all versions up to a week before it was killed (it is dead isn't
+it?) abused Avalon Hill's trademark Telengard, but that started before
+Telengard was registered, so who knows, that might even be OK.
+(Unfortunately, you'd probably have to go to court to determine it though,
+and that could be expensive.)
+
+Finally, the way it came into the company was not clean. Some
+non-employees, one of whom has since joined the company installed it on a
+DEC machine while visiting a friend/brother who was an employee. After
+they did that, they asked if the sources could be kept out of circulation,
+as they had hopes of selling it and didn't want it to go into the public
+domain. None of the DEC employees present said no to this request. They
+thereby entered into an oral non-disclosure agreement on the behalf of
+DEC, or at least that's how the courts might interpret it. Now, to my
+knowledge everyone lived up to that agreement fairly well and in fact the
+Pascal version was developed almost independently from the original, and
+lots of changes have occurred. The original author has sold a descendant
+of the original game to AH. We ought to be safe, so long as we don't
+make commercial use of the game. (Or come to an agreement with AH before
+doing so. One CT manager was interested in doing that.)
+
+Unfortunately, the legality of our position and behavior can not be determined
+without going to court. This would be expensive. DEC wouldn't feel kindly
+towards any employee who caused them to go to that expense over a game.
+What makes it real tough is the oral nature of the agreement. Because of
+this the details and requirements of the agreement can only be determined
+by a judge. As a side point, although a non-disclosure agreement can be
+enter into by any employee on the behalf of DEC, DEC policy reserves the
+right to do this to officers of the corporation. Arrogating the right to
+make such an agreement is I believe a firing offense. [Lesson, be real
+careful to only bring in games that are truly in the public domain.]
+
+Bottom line which I have from a DEC attorney: DND is too risky to allow
+to exist on DEC equipment. Under NO circumstances may commercial use be
+made of it (such as distributing it on a kit or using it as a demo program
+for potential customers, as well as selling it outright).
+
+Sorry about all this, but at least you had it around for 6 or 7 years.
+
+JimB.
+
+================================================================================
+Note 4.4                               DND                               4 of 27
+HUMAN::BURROWS                                       19 lines  25-MAY-1984 23:25
+--------------------------------------------------------------------------------
+
+As to the number of orbs ther were in the game, that depends on the version
+of the program and the data file. The BASIC version had between 3 and 5
+dungeons depending on the specific version of the data file. Of the original
+3 dungeons, rwo had orbs and one, the one whose bottom two levels were junk
+did not. Someone fixed this by creating a new 19th and 20th levels. I believe
+later the original author of that dungeon supplied the original 19th and 20th
+levels and also returned the orb (in a different place). If memory serves,
+the data files can be told apart by whether there is a secret door facing the
+entrance to Telengard. The fourth dugeon, the Warren hasn't got an orb as
+it was never finished. The fifth dungeon is someone else's diverged version
+of the Warren and actually appears as dungeon number 4. If both Warrens are
+in the same file, the real warren is 5th and the 20-level warren is 4th.
+In the Pascal version, I believe the version corrected by the original author,
+and the original Warren appear, but not the divergent Warren. In the last
+version of the game, created just before the game was killed, Telengard was
+removed leaving Svhenk's Lair, Lamorte, and the Warren as the only three
+dungeons, with two orbs amongst them.
+
+Hope this helps the historians among you.
+
+================================================================================
+Note 4.5                               DND                               5 of 27
+RAINBW::STRATTON                                      6 lines  18-JUN-1984 23:15
+--------------------------------------------------------------------------------
+
+I don't understand the references to DND being ``killed''.  It sounds as
+though there were some corporate edict that I somehow missed.  Do those
+who tried to ``kill'' it really think that no systems have DND anymore?
+Last I looked, it was on RAINBW - not to mention on several backup tapes...
+
+Jim Stratton
+
+================================================================================
+Note 4.6                               DND                               6 of 27
+HUMAN::BURROWS                                        6 lines  21-JUN-1984 12:11
+--------------------------------------------------------------------------------
+
+Yes, there was such an edict. No, I don't think it is believed to be totally
+gone. That would be unrealistic. If you know of any systems that it is
+on, it would be well to remove it in accordance with the "edict", especially
+if you've said in black and white that you know where it is.
+
+JimB
+
+================================================================================
+Note 4.7                               DND                               7 of 27
+VLNVAX::MERRILL                                       4 lines  23-JUL-1984 17:39
+--------------------------------------------------------------------------------
+
+I just love an edict that is never seen.  If someone could please post
+a copy for historical reasons, then it could be seen that DEC made a
+concerted effort to avoid any copyright infringements.  I personally
+believe that this is more the stated rationale than the reason.
+
+================================================================================
+Note 4.8                               DND                               8 of 27
+STK02::SKORDBY                                        8 lines  26-JUL-1984 15:06
+--------------------------------------------------------------------------------
+
+How about the PC300 version ? Is that one also supposed to be 'killed' ?
+That version is distributed on diskettes which makes it almost impossible
+to get rid of. We haven't got DND on our VAX anylonger but I've been playing
+it on my Professional ....
+
+          Bosse (Stockholm)
+
+================================================================================
+Note 4.9                               DND                               9 of 27
+HUMAN::BURROWS                                       33 lines  26-JUL-1984 22:07
+--------------------------------------------------------------------------------
+
+RE: .7
+
+ <flame on>
+
+I'm really getting tired of uniformed, self-appointed experts putting forth
+their opinions as to the "real" legal situation, the "real" motives of
+the legal department or management in declaring that this game is to be
+removed, or my "real" motives in involving legal in the whole thing. If
+you don't KNOW other peoples motives it is impolite to ascribe them publicly
+based on your own speculations. If you are not a lawyer, it is decidedly
+unwise to publicly dispense legal advice. If you don't know the reasons
+for official decisions made either by upper management or by the legal
+department is not one of the better moves to publicly denigrate them.
+
+<flame off, more or less>
+
+The "edict" is hardly something that no-one has seen. I have personally
+mailed it to several dozen people, and discussed the nature of it, as well
+as how and why it was arrived at, and by whom in both Desperado and this
+file. I have been forwarded copies of my original memo that have been forwarded
+over 25 times. Go back and read response .3.
+
+For the historical record I will post a copy of the original as the next
+response to this note.
+
+RE: .8
+
+Yes that's the version. As per note 4.3, and the one following this, it must
+not be used commercially, nor is it to be allowed to exist on DEC owned
+equipment. Having stated in a written form that you have it, you should be
+particularly careful to get rid of it and to establish that you have.
+
+JimB.
+
+================================================================================
+Note 4.10                              DND                              10 of 27
+HUMAN::BURROWS                                       53 lines  26-JUL-1984 22:16
+--------------------------------------------------------------------------------
+
+With apologies to all of you who have seen this over and over again, I
+present the original not about the purging of DND/DEMO/DECdungeon
+
+JimB.
+
+From: BURROWS "Jim Burrows"     Date: 23-Sep-83 07:26 PM
+To: BURROWS ! From list -> _SY:[230,216]DND.DIS
+Subject: DND/DEMO program
+
+To: @DND.DIS:
+
+     This afternoon I had a conversation with Jerry Lester of DEC's legal
+department about the history of the DND.BAS/DND.B2S/DND.PAS/DEMO.PAS programs.
+After I described the origins of the game, and its indirect relationship to
+the Avalon Hill Telengard (TM) game, he told me what DEC's legal position in
+the matter has to be.
+
+     1) The program(s) MUST NOT, under any circumstance, BECOME a part
+        of any of DEC or DECUS commercial offerings.
+
+     2) In fact, ALL COPIES of BOTH VERSIONS of the program must BE
+        DESTROYED. The game must be REMOVED from ALL DEC COMPUTERS.
+
+     3) No further connections between DEC or DEC employees and Dan
+        Lawrence's "dungeoning" game should exist.
+
+     I got the very strong impression that if Jerry had found out about
+DND from any source other than one of the people involved, he would be
+taking strong official actions to effect all of the above. Further, we
+can be sure that if after a reasonably short period of time, it comes
+to Jerry's (or anyone else in legal, or any of a number of upper management)
+attention that there are still copies of the game around, some significant
+official action will have to be taken.
+
+     Therefore, please go cooperate in getting rid of DND as quickly
+and as effectively as possible. Get rid of any copies you have, and pass
+on the information that this needs to be done to everyone you know who
+has a copy. Further, if you are aware of any copies that might have made
+their way out of the company, please inform me or Jerry Lester.
+
+     DND is a great game, but we just can't afford to have it around
+given its questionable history and relationship to other companies'
+products. Look at this as an opportunity to motivate others or yourself
+to develop a new, better role-playing/adventure game that has no
+relationship to other commercial games. We've needed a new game for a
+couple of years.
+
+     If you have any questions please call me.
+
+     (Oh, and as an aside, don't accept games from non-DEC employees
+unless they can a do give you unconditional access to it, so that DEC's
+interests, claims, and responsibilities have no chance of overlapping or
+interfering with those of other companies.)
+
+================================================================================
+Note 4.11                              DND                              11 of 27
+RDGE00::SHERWOOD                                      6 lines   4-DEC-1984 15:23
+--------------------------------------------------------------------------------
+
+Having just joined the company, and read all the previous notes
+could anyone tell me if the Vax based program DUNGEONS.EXE is
+the one that comes under this ban?
+
+        And if so does ADVENTURE.EXE ?
+
+Gary
+
+================================================================================
+Note 4.12                              DND                              12 of 27
+SERPNT::GULDENSCHUH                                   2 lines   4-DEC-1984 15:48
+--------------------------------------------------------------------------------
+
+Adventure, does not.
+
+Dungeon, doesn't if it's the version with lots of text.
+
+================================================================================
+Note 4.13                              DND                              13 of 27
+DRAGON::KALOGER                                       7 lines   6-DEC-1984 15:59
+--------------------------------------------------------------------------------
+
+Gee, I wonder if the edict applies to a version called "Roosters
+and Roasters", derived from the original but with the copyrights
+("DND" named stuff) munged.  Probably not good to let it get out
+of the henhouse.  But it was fun a few years back when the
+original got boring.  Instead of Undead, there were Precooked.
+All sorts of poultry ran around attacking you; the character
+classes were Farmer, Cook, and Magic Chef.
+
+================================================================================
+Note 4.14                              DND                              14 of 27
+SYBIL::BURROWS                                        4 lines   7-DEC-1984 11:37
+--------------------------------------------------------------------------------
+
+Boy, I wished I'd seen that one! Sounds like fun.
+
+You're right though. It should now be kept in the henhouse.
+
+JimB.
+
+================================================================================
+Note 4.15                              DND                              15 of 27
+PERCH::ANDY_LESLIE                                     1 line   9-DEC-1984 09:23
+--------------------------------------------------------------------------------
+
+sounds foul (fowl) to me...
+
+================================================================================
+Note 4.16                              DND                              16 of 27
+COGITO::DURSO                                         0 lines  21-JAN-1985 12:59
+--------------------------------------------------------------------------------
+
+================================================================================
+Note 4.17                              DND                              17 of 27
+GRAFIX::BURROWS                                       8 lines   8-AUG-1985 17:42
+--------------------------------------------------------------------------------
+
+FYI - there's an allegedly "public domain" version of DND running around on
+some external bulletin boards. It runs on rainbows and the like. I've looked at
+it and it is every bit as bad as the version in house. In fact it's a little
+worse. It like every other DND mustn't be on DEC-owned equipment.
+
+Sorry, 'bout that. I thought it might make matters better. It didn't.
+
+JimB.
+
+================================================================================
+Note 4.18                              DND                              18 of 27
+CHEERS::CREAN                                        20 lines  29-AUG-1986 16:24
+                                 -< origions >-
+--------------------------------------------------------------------------------
+
+    I have seen the source code of the basic version with only the origonal
+    tellengard dungeon.  It lists the auther ( or someone stealing creadit
+    and has a date around 1979 ) didn't the origonal version come out
+    of a university and some one took all the creadit for a group of
+    people.  In the versoin I've played There are only twenty types
+    of monsters and the random monsters, bottomless pits on the twentieth
+    level only, and a few secret doors.  I've heard of other versions
+    that contain two other dungeons as well ( shcenk's lair?, and sphinx).
+    in this vesion some things are added, thrones and the transporter
+    doesn't work if you have the ORB, very depresing for someone who
+    doesn't know where all the stairs are.
+
+    Question:  If versions vary and the origonal auther is unknown how
+    can AH aquire the rights to the game, and why hasn't TSR tried to
+    pull a fast-one since the name DND is used and AH is a competitor
+    of theirs.
+
+                     ed.
+
+================================================================================
+Note 4.19                              DND                              19 of 27
+HUMAN::BURROWS "Jim Burrows"                         47 lines   2-SEP-1986 21:55
+                   -< Sorry, that isn't the way it happened >-
+--------------------------------------------------------------------------------
+
+        So far as I am aware the authors of DND are quite well known.
+        Dan Lawrence is the one who did most of the original code, the
+        Telengard dungeon and the Telengard game (which is a descendant
+        of DND) sold to AH. Svhenk's Lair and Lamorte were done by Dan's
+        school-mates, one of whom was involved in the original selling
+        of the game (to a company which defaulted on its contract) and
+        is now a DEC employee. (He can identify himself here if he so
+        chooses.)
+
+        The versions here at DEC added a new dungeon--the Warren--and a
+        new algorythm for combat, and then reimplimented it in Pascal
+        (largely without access to the original sources). In the Pascal
+        version we added all sorts of nifty new things.
+
+        TSR hasn't gotten involved with AH's Telengard because there is
+        no direct tie between Telngard (tm) and D&D; (tm). There is no
+        reference to DND in Telengard. There is a reference to Telengard
+        in DND, and the name of DND is very reminiscent of D&D;, so TSR
+        and AH could conceivably have some sort of legal handle on DND.
+
+        Somehow someone got a copy of the Pascal version without either
+        the permission of the authors of that version, or so far as I
+        know with the authors of the original software and was providing
+        it as "pay as you go software" if you like it you send them
+        money for it. Pretty neat since they didn't write the code. I
+        know, I wrote large sections of the Pascal version, which was
+        done solely by DECkies.
+
+        This version is a blatant rip-off of the Pascal version. If Dan
+        Lawrence or AH have any claim on the Pascal version (which only
+        a court can determine), then it is also a rip-off of them. The
+        version I saw had the word Telengard, and if memory serves some
+        form of "Dungeons and Dragons" in it. It thus abuses two
+        company's trademarks for commercial purposes.
+
+        Only this last "public domain" (for so it has been called at
+        times) version has as obscure a history as you have heard of.
+        It's status isn't in question. It's a blatant unethical rip-off,
+        the only question is who's been ripped off.
+
+        Sorry, but this game just can't be permitted on DEC equipment.
+        That's the decision of the Legal department. It is, I'm afraid
+        warranted by the actual history of the program, and can only be
+        changed by a legal battle or an N-way agreement amongst the
+        involved parties. DEC just isn't willing to go to that expense.
+
+        JimB.
+
+================================================================================
+Note 4.20                              DND                              20 of 27
+TOMCAT::LIZOTTE                                      10 lines   8-APR-1987 14:32
+                                   -< MAPS >-
+--------------------------------------------------------------------------------
+
+    I DONT KNOW ABOUT ANYONE ELSE BUT
+    MOST OF THE MAPS IVE SEEN THAT LEAD YOU TO THE ORB
+    ARE WRONG
+    DOES THE ORB MOVE AROUND OR SOMTHING
+    IF IT DOES , DOES IT CHANGE LEVELS??????/
+
+                       JEFF
+
+================================================================================
+Note 4.21                              DND                              21 of 27
+HUMAN::BURROWS "Jim Burrows"                          6 lines   8-APR-1987 22:32
+                           -< Moot question, right? >-
+--------------------------------------------------------------------------------
+
+        You, of course, are asking for historical purposes, right?
+
+        As my earlier notes make clear, DND must not be run on any
+        DEC-owned equipment, nor shown to customers, nor...
+
+        JimB.
+
+================================================================================
+Note 4.22                              DND                              22 of 27
+ASGNQH::CREAN                                        13 lines   2-JUL-1987 03:27
+                           -< for history purposes >-
+--------------------------------------------------------------------------------
+
+    Assuming that you've read 4.21 above.
+    The location of where the orb is is determined by the datafile.
+    If someone has altered it then the orb might be in a difrent location.
+    The data is loaded into a 10x10 array.  each element contains the
+    information for two rooms.  wheather the north and west sides of
+    a space contain a wall, door, secret door or if the room contains
+    an alter, fountain, pit, or the orb.  Just look at the functions
+    in the source of DNDDGN.BAS to figure out how to do it and look
+    at the data for the bottom floor in the data file to see where it
+    is in your version.
+
+                            Ed.
+
+================================================================================
+Note 4.23                              DND                              23 of 27
+REGENT::DITTMER                                      16 lines  14-SEP-1987 17:45
+                              -< LONGING FOR DND >-
+--------------------------------------------------------------------------------
+
+    I'd say you "legal beagles" are overreacting a bit. If someone is
+    playing the banned game of DND on their PRO or Rainbow, how could
+    the originator ever find out -- or really care if they did?
+
+    Anyway, I used to have the (now banned) version of DND on my PRO
+    at home. I accidentally deleted it -- much to my son's distress.
+    He is a DND addict, and loved it. He says the current version of
+    Dungeons now available on the network isn't nearly as good. If
+    ANYONE has a copy of the (now banned) DND that will run on a PRO 350,
+    please contact me directly.
+
+    If you know of a version that can be purchased for the PRO, that
+    would be fine also.
+
+    Thanks,
+
+    -Gene
+
+================================================================================
+Note 4.24                              DND                              24 of 27
+LINCON::WOODBURY "Max T.E."                           7 lines  15-SEP-1987 11:17
+--------------------------------------------------------------------------------
+
+Re .23:
+
+        From what I have heard, the originator is concerned about loss of
+sales, and has indicated that they would sue DEC if they find that they have
+lost sales.  If they do sue DEC it will be because someone (you) have broken
+the rules.  DEC will then have very good grounds for terminating that
+someone.  Do you really want to risk your job for some game?
+
+================================================================================
+Note 4.25                              DND                              25 of 27
+STAR::BOUCHARD "I have nothing to say"                9 lines  22-SEP-1987 20:18
+                                 -< Telengard >-
+--------------------------------------------------------------------------------
+
+    re: .23
+
+    Did you check if Telengard (Avalon Hill?) comes in a version which
+    will run on the pro?  It's essentially the same game, and the author
+    will get his royalty just like he should...
+
+            Rich
+
+================================================================================
+              <<< 501CLB::EIS4$DISK:[NOTES$LIBRARY]GAMES.NOTE;1 >>>
+                             -< Welcome to GAMES >-
+================================================================================
+Note 118.0                 DND,DGN,DCLNDR WORK ON 380                 11 replies
+CURIUM::FMUCCI                                       12 lines  14-MAR-1985 12:38
+--------------------------------------------------------------------------------
+
+Hello,
+      My name is Phil Mucci and I'm having trouble with DND,DUNGEON
+and DECLANDER on my 380.Does anybody out there in the gaming world know
+of a source that has DND with all the help files ie:spells,transportation
+and that doesn't give me a stupid,~!@#$%^&~!@#$%^&* PASCAL error code while
+running the help files.Also this version should have a AUTOINSTALL file so
+I don't have to use PFT.I'm also having the same proble with DUNGEON and
+DECLANDER.
+
+        Please help,I'm desperate to kill a dragon,
+
+               Phil Mucci
+
+================================================================================
+Note 118.1                 DND,DGN,DCLNDR WORK ON 380                    1 of 11
+TRIVIA::BURROWS                                       7 lines  14-MAR-1985 17:34
+--------------------------------------------------------------------------------
+
+Please see note #4.3 for the reasons why DND must be removed from all DEC-owned
+equipment. More than IT MUST NOT BE USED FOR COMMERCIAL PURPOSES, and giving
+it to a customer or potential customer is a commercial use.
+
+Sorry to rain on your parade.
+
+JimB.
+
+================================================================================
+Note 118.2                 DND,DGN,DCLNDR WORK ON 380                    2 of 11
+QUOIN::BEVERIDGE                                      6 lines  14-MAR-1985 17:50
+--------------------------------------------------------------------------------
+
+I suspect that this topic has been beat to death already, but...
+
+Would it become "legal" if someone were to recompile DND and change all
+references to copyrighted names to something else?
+
+Just curious,    Jim
+
+================================================================================
+Note 118.3                 DND,DGN,DCLNDR WORK ON 380                    3 of 11
+CURIUM::FMUCCI                                        3 lines  14-MAR-1985 19:23
+--------------------------------------------------------------------------------
+
+        Well how 'bout DECLANDER AND DUNGEON,
+
+             Phil
+
+================================================================================
+Note 118.4                 DND,DGN,DCLNDR WORK ON 380                    4 of 11
+EDSVAX::CRESSEY                                      20 lines  15-MAR-1985 15:42
+--------------------------------------------------------------------------------
+
+    Re .-2:
+
+    Not sure how you meant 'legal'....
+
+    The courts have, in numerous instances, ruled that one text is
+    'derived' from another text by simple substituion of names (or
+    even of concepts), and therefore possibly an infringement just as
+    though it were a copy.
+
+    There have been cases of computer programs that were shown to be
+    'conversions' of copyrighted material, which infringed on the
+    copyright, and not 'indepentent developments of a similar expression
+    of an algorithm' which might not have infringed.  In some of these
+    cases the infringing program was not even in the same programming
+    language as the original!
+
+    (I am not a lawyer, so do your own legal research to find the
+    precedents)
+
+    Dave
+
+================================================================================
+Note 118.5                 DND,DGN,DCLNDR WORK ON 380                    5 of 11
+GRDIAN::COUTU                                        21 lines  15-MAR-1985 18:35
+--------------------------------------------------------------------------------
+
+I'd like to point out (just to add fat to the fire :-)) that the game
+ROGUE is now on the market. For those of you who have never heard of it,
+it was created on a UN*X system at UC Berkeley and is a DND type of game.
+In fact, the original version had monsters straight out of TSR's Monster
+Manual (for Advanced Dungeons and Dragons). In order to sell the game
+as a product they had to change the names of all monsters that were not
+commonly known mythical beasts. That is, the names that TSR could claim
+copyright on, were changed. I tend to think that a maze game centering
+around an adventurer is no problem. But get rid of all references to
+other games that could be perceived as copyright infringements.
+
+Of course, this is my opinion, and if I feel like creating a program
+for my own use I'll make it any way I please. But I'd like to see some
+constructive legal advice as to how we can 'remake' the old DND game. It
+was a very good playing game, well structured, etc. There must be a way
+to perform plastic surgery on it so that even it's own mother won't know
+it! :-)
+
+Dan
+
+# TSR is a trademark of TSR, and AD&D; is too.
+
+================================================================================
+Note 118.6                 DND,DGN,DCLNDR WORK ON 380                    6 of 11
+CURIUM::FMUCCI                                        6 lines  16-MAR-1985 16:57
+--------------------------------------------------------------------------------
+
+        I need answers !
+
+        What about DECLANDER,DECIPEDE,DECMAN AND DUNGEON??????????????????
+
+           Phil
+
+================================================================================
+Note 118.7                 DND,DGN,DCLNDR WORK ON 380                    7 of 11
+GRDIAN::COUTU                                        11 lines  18-MAR-1985 10:53
+--------------------------------------------------------------------------------
+
+If the 'regular' PRO versions don't work on your 380, then all I can
+suggest is that you try to track down who in the PRO group holds the
+sources to these games, node EVE is probably the best starting point,
+although I don't know of any names of particular persons to contact.
+Note that if a program uses the graphics capablities of the PRO (In
+particular the EBO board) then the source will have to be modified
+in order to run on a 380 due to differences in the graphics hardware
+addresses (or something to that effect). BTW, you do know of the
+net kits on EVE don't you?
+
+Dan
+
+================================================================================
+Note 118.8                 DND,DGN,DCLNDR WORK ON 380                    8 of 11
+TRIVIA::BURROWS                                      23 lines  18-MAR-1985 18:29
+--------------------------------------------------------------------------------
+
+First, please read all of the discussion in note 4.*.
+
+Second, I have contacted an attorney. DND is not legal, nor can it be made
+legal without either going to court or having legal documents drawn up.
+
+Period.
+
+Third, statements of the sort "There must be a way to perform plastic surgery
+on it so that even it's own mother won't know it!" are way off base. Disguising
+the program will not make it kosher. It may reduce the chances of getting
+caught, but it will not make it kosher.
+
+Regarding the statement that "if I feel like creating a program for my own use
+I'll make it any way I please," please do not do so on company time or company
+equipment. Make absolutely certain you don't make commercial use of it. Be
+warned that giving it free to someone you or the company you work for does
+business with may be considered commercial use.
+
+Finally, the bottom line. The official stand of the DEC legal department is
+that DND (DECquest, DECdungeon, DEMO, or any other name it might have) must be
+removed from all DEC-owned equipment. You may quote me, or call Gerry Lester
+for confirmation.
+
+JimB.
+
+================================================================================
+Note 118.9                 DND,DGN,DCLNDR WORK ON 380                    9 of 11
+TRIVIA::BURROWS                                       4 lines  18-MAR-1985 18:32
+--------------------------------------------------------------------------------
+
+I know nothing about DECLander. I have heard rumors that DECipede and DECman
+may be frowned on. I believe the Dungeon is OK.
+
+JimB.
+
+================================================================================
+Note 118.10                DND,DGN,DCLNDR WORK ON 380                   10 of 11
+MILOS::BECK                                           5 lines  18-MAR-1985 18:45
+--------------------------------------------------------------------------------
+
+I know the person that wrote Dungeon, and he had permission from the original
+authors at MIT. It's available through DECUS. DEClander was shipped with
+the Applications Starter Kit for the PRO/350, so there are no legal problems
+with it. To my knowledge, it's the only game around with official DEC
+documentation.
+
+================================================================================
+Note 118.11                DND,DGN,DCLNDR WORK ON 380                   11 of 11
+MKT782::FMUCCI                                        4 lines  26-MAR-1985 17:21
+--------------------------------------------------------------------------------
+
+Thanks for the info guys.
+
+          Any more help is appriciated.
+
+Thanks
+
+        phil
+
+================================================================================
+              <<< 501CLB::EIS4$DISK:[NOTES$LIBRARY]GAMES.NOTE;1 >>>
+                             -< Welcome to GAMES >-
+================================================================================
+Note 194.0                 DND working on the Rainbow                  7 replies
+QUOIN::BEVERIDGE                                     16 lines  10-AUG-1985 11:28
+--------------------------------------------------------------------------------
+
+I have written a program called DNDFIX that will allow DND to run 95%
+perfectly on the Rainbow.  This program runs standalone, it makes no
+modifications to DND and so will not violate the so called license that
+is included with it.  It is available on:
+
+        QUOIN::SYS$USER:[BEVERIDGE.PUBLIC]DNDFIX.*
+
+DND is available off of various FIDO Nodes, as mentioned elsewhere in this
+file.  It is not to be mounted on the Easynet, as it is fairly close to
+the original DND that ran on the VAX.  Those of you who have played before
+will find the new version ridiculously easy - I had five items that were
+plus five before going beyond level two, and that is not even mentioning
+the level one Balrogs (level ONE?!?!) that one encounters every so often.
+
+        May the nameless god be kind to you,
+
+          Jim
+
+================================================================================
+Note 194.1                 DND working on the Rainbow                     1 of 7
+HUMAN::BURROWS                                       12 lines  11-AUG-1985 00:32
+--------------------------------------------------------------------------------
+
+Please remember that you MUST not have this game on any DEC-owned equipment.
+
+As a personal favor I would also ask that you not send them the requested $25.
+They are profiting from my code. I wrote a good fraction of what they are
+"licensing".
+
+Finally, please don't do anything to draw attention to this version.
+
+Thank you,
+
+JimB.
+
+PS. I'm glad you liked the Nameless God.
+
+================================================================================
+Note 194.2                 DND working on the Rainbow                     2 of 7
+MARRHQ::WICKERT                                       7 lines  11-AUG-1985 19:37
+--------------------------------------------------------------------------------
+
+Could you post on which BBSs this version can be found? I've tried several
+but with no luck...
+
+Thanks,
+
+Ray
+
+================================================================================
+Note 194.3                 DND working on the Rainbow                     3 of 7
+HUMAN::BURROWS                                        6 lines  12-AUG-1985 00:50
+--------------------------------------------------------------------------------
+
+Aw, come on guys.... I really don't believe in making personal judgments
+about other noters, but...
+
+Could we have a modicum of discretion, good judgment or plain common sense?
+
+JimB.
+
+================================================================================
+Note 194.4                 DND working on the Rainbow                     4 of 7
+ELMO::LEIGH                                           2 lines  12-AUG-1985 01:39
+--------------------------------------------------------------------------------
+
+MAIL works much better...
+
+================================================================================
+Note 194.5                 DND working on the Rainbow                     5 of 7
+MARRHQ::WICKERT                                      13 lines  12-AUG-1985 11:44
+--------------------------------------------------------------------------------
+
+I don't agree at all!
+
+I own my Rainbow, as do many other readers of this notesfile! If the game
+is illegal than say so, but if not then there is no reason it can't be mentioned
+here.
+
+One reply to a note is a lot easier than 10 mail messages!
+
+I do sympathize with the stolen code and all that but still...
+
+             Ray
+
+================================================================================
+Note 194.6                 DND working on the Rainbow                     6 of 7
+HUMAN::BURROWS                                       31 lines  12-AUG-1985 19:26
+--------------------------------------------------------------------------------
+
+RE: .5
+
+I'd have agreed with you a couple of years ago. But my experience with DND on
+DEC-machines in the mean-time has lowered my opinion greatly of the judgment of
+my fellow DECkies. If you publish the location of this version here, it will
+increase the number of copies on DEC-owned machines. People will copy it.
+I guarantee it.
+
+Additionally, this program is not illegal, BUT it does have the potential to
+cost DEC a good deal in legal expenses at the very least. The more copies there
+are of it in the world on DEC-owned machines or on DEC-employee-owned machines,
+the greater the probability of triggering the events that will cost the
+company money. I therefore suggest that discretion calls for shunning it.
+
+Now this second is not a strong argument, and I admit it. However, this note
+file is DEC property and is subpoena-able evidence. Using it to distribute
+information about where to get software of questionable legal merit, is a
+really bad idea. It involves DEC directly and really ought to be avoided.
+
+If you insist on playing the game on your own machine, as one of the
+implementors of the stolen code I feel flattered, and acknowledge that you are
+within your rights, but please don't discuss it here in a way that will
+encourage others to seek it, and don't distribute it through DEC channels
+either directly or indirectly.
+
+I may be obnoxious about this, singing the same song over and over again,
+but I'm really a lot nicer than legal has indicated they feel they have
+the right to be on this subject. It is really best for all of our careers
+to just let the damned thing die. Or get a better game.
+
+JimB.
+
+================================================================================
+Note 194.7                 DND working on the Rainbow                     7 of 7
+QUOIN::BEVERIDGE                                       1 line  12-AUG-1985 20:20
+
+--------------------------------------------------------------------------------
+
+DNDFIX has been removed from the network due to the potential legal problems.

@@ -61,7 +61,7 @@ int utl_populate()
   return(1536);
 }
 
-    
+
 int utl_winner()
 
 {
@@ -85,7 +85,7 @@ int utl_winner()
   close(fd);
   /* try to remove him from the file */
   chr_save(NOPE);
-  if (chr_load(u.n[0], NOLOCK) != NOPE) 
+  if (chr_load(u.n[0], NOLOCK) != NOPE)
     chr_lck_nuke(NUKE);
   return(YEP);
 }
@@ -121,7 +121,7 @@ ask:
     i = 10;
   u.c[15] = u.c[16] = u.c[17] = 0;
   u.c[64] = DGN_NEWADV;
-  if (i == 13) 
+  if (i == 13)
     return(NOPE);
   if (i != 10) {
     printf("Don't you listen?\r\n");
@@ -140,7 +140,7 @@ int utl_death()
     u.c[34]--;
     u.c[4]--;
     if (u.c[4] == 0 || roll(1,10) > u.c[4])
-      printf("It failed!! [%d spell%s left]\r\n", u.c[34], 
+      printf("It failed!! [%d spell%s left]\r\n", u.c[34],
              (u.c[34] == 1) ? "" : "s");
     else {
       u.c[11] = roll(1,u.c[10]);
@@ -277,7 +277,7 @@ int utl_chklvl()
       return(utl_death());
     }
     utl_sprog();
-    if (chr_save(NOPE) != YEP) 
+    if (chr_save(NOPE) != YEP)
       printf("[Strange, I can't check point your character!]\n\r");
     return(NOPE);
   }
@@ -294,7 +294,7 @@ int utl_chklvl()
   if (u.c[9] >= utl_exp(u.c[8] + 1))
     u.c[9] = utl_exp(u.c[8] + 1) - 1;
   utl_sprog();
-    if (chr_save(NOPE) != YEP) 
+    if (chr_save(NOPE) != YEP)
       printf("[Strange, I can't check point your character!]\n\r");
   return(NOPE);
 }
@@ -328,7 +328,7 @@ int c7, lvl;
   int mx = 6;
   int lcv;
   printf("\r\n");
-  if (c7 == 1) 
+  if (c7 == 1)
     mx = i = 4;
   i += lvl;
   for (lcv = 1 ; lcv <= mx ; lcv++)
@@ -347,13 +347,13 @@ void utl_adj_st()
   if (i1 == 1)
     while (u.c[i2] - i3 < 1)
       i3--;
-  printf("Your %.3s just went %s by %d.\r\n", st + ((i2 - 1) * 3), 
+  printf("Your %.3s just went %s by %d.\r\n", st + ((i2 - 1) * 3),
 	 (i1 == 1) ? "down" : "up", i3);
   if (i1 == 1)
     i3 = -i3;
   u.c[i2] += i3;
   printf("It is now %d.\r\n", u.c[i2]);
-  if (chr_save(NOPE) != YEP) 
+  if (chr_save(NOPE) != YEP)
     printf("[Strange, I can't check point your character!]\n\r");
 }
 
@@ -368,7 +368,7 @@ int utl_adj_ex()
   if (i1 == 1)
     i2 = -i2;
   u.c[9] += i2;
-  if (chr_save(NOPE) != YEP) 
+  if (chr_save(NOPE) != YEP)
     printf("[Strange, I can't check point your character!]\n\r");
   return(utl_chklvl());
 }

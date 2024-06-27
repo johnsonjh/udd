@@ -33,7 +33,7 @@ int cbt_main()
   }
   switch(u.c[64]) {
   case CBT_NORM:
-    if (u.c[63] != 0) 
+    if (u.c[63] != 0)
       switch (u.c[63]) {
       case SPC_THR:
 	m = 11;
@@ -116,7 +116,7 @@ int cbt_main()
     ok = dead = 0;
     if (u.c[42] > 0 && roll(1,20) < 15+u.c[8] - m1)
       ok = 1;
-    /*if (roll(1,20) <= u.c[2] + u.c[5] / 2.0) 
+    /*if (roll(1,20) <= u.c[2] + u.c[5] / 2.0)
       ok = 1;  */
     if (roll(1,20) + m1 <= ((u.c[2] + u.c[5]) / 2.0) + u.c[8])  /*CDC XXX???*/
       ok = 1;
@@ -127,12 +127,12 @@ int cbt_main()
       if (ok != 0) {
       ask:
 	if (autoevade == 0) {
-	  printf("Press (F)ight%s or (E)vade: ", 
+	  printf("Press (F)ight%s or (E)vade: ",
 		 (u.c[31]+u.c[32]+u.c[33]+u.c[34] == 0) ? ""  : ", (C)ast,");
 	  in = getchar();
 	  if (islower(in))
 	    in = toupper(in);
-        } else 
+        } else
 	  in = 'E';
 	if (in < 0)
 	  in = 'E';
@@ -163,7 +163,7 @@ int cbt_main()
 	      while (ok == 0) {
 		ok = 1;
 		in = roll(1,4);
-		if (in == 1 && u.i[2] == 1) { 
+		if (in == 1 && u.i[2] == 1) {
 		  ok = 0;
 		  continue;
 		}
@@ -226,7 +226,7 @@ int cbt_main()
 	      d -= roll(1, m_arm)+roll(1,m_arm);   /*one for ARM,one for shld*/
 	    if (d < 1)
 	      printf("It fends you off.\r\n");
-	    else 
+	    else
 	      cbt_uhitm(d);
 	  }
 	}
@@ -288,7 +288,7 @@ int cbt_main()
 	if (d == 0)
 	  d = roll(1, mm[m].m) + m1;
 	if (m == 19)  /* balrog */
-	  if (roll(1,3) < 3) 
+	  if (roll(1,3) < 3)
 	    printf("The %s uses it's sword!\r\n", mnam);
 	  else {
 	    printf("The %s uses it's whip!\007\r\n", mnam);
@@ -402,7 +402,7 @@ s_top:
     if (in2 == '\r')
       return(NOPE);
     if (in2 < '1' || (in2 > '4' && u.c[7] == 1) ||
-                     (in2 > '6' && u.c[7] != 1)) 
+                     (in2 > '6' && u.c[7] != 1))
       utl_prtspl(u.c[7], lvl);
     else
       spl = in2 - '0';

@@ -7,7 +7,7 @@
  *
  * Current version/patchlevel: */
 /*#define VERS "UDD V5.1C-06  22-Oct-89" */
-#define VERS "UDD V5.1C-07  01-Feb-2001" 
+#define VERS "UDD V5.1C-07  01-Feb-2001"
 
 #define MAIN
 
@@ -121,7 +121,7 @@ char **argv;
       printf("\n");
       dgn_main();
       autosave = 0;
-      if (u.c[64] != SWB_CREATE) 
+      if (u.c[64] != SWB_CREATE)
         break;
     printf("\r\n%s> ", ddd);
     u.c[64] = XXX_NORM;
@@ -301,12 +301,12 @@ char **argv;
 	  printf("u%-7d ", ntohl(cptr->c[49]));
 	else
 	  printf("%-8s ", pptr->pw_name);
-	printf("%c%c%c%c ", (cptr->c[15] == 0) ? ' ' : '*', 
+	printf("%c%c%c%c ", (cptr->c[15] == 0) ? ' ' : '*',
 	       (cptr->c[61] == 0) ? ' ' : '+',
 	       (cptr->c[62] == 0) ? ' ' : '@',
 	       (cptr->c[57] == 0) ? ' ' : 'L');
 	tmp = ntohl(cptr->c[7]);
-	if (tmp == 1) 
+	if (tmp == 1)
 	  printf("CLRC\r\n");
 	else if (tmp == 2)
 	  printf("MAGE\r\n");
@@ -370,7 +370,7 @@ char **argv;
 	else
 	  chr_save(YEP);               /* someone else char with same
 					  name, created between the above
-					  two calls to chr_load... not 
+					  two calls to chr_load... not
 					  very likely */
       } else
 	printf("No\r\n");
@@ -440,7 +440,7 @@ char **argv;
       tmp = atoi(nbuf);
       unix_tty_dgn();
       fflush(stdin);
-      if (tmp < 1 || tmp > 1000) 
+      if (tmp < 1 || tmp > 1000)
 	printf("That's a little out of my range...\r\n");
       else
 	printf("You need %d experience for level %d.\r\n", utl_exp(tmp), tmp);
@@ -453,7 +453,7 @@ char **argv;
       while ((cptr = chr_scan()) != NULL) {
 	if (cptr->c[0] == 0)
 	  continue;
-	if (cptr->c[62] != 0 && wiz == 0) 
+	if (cptr->c[62] != 0 && wiz == 0)
 	  continue;
 	printf("%-10.10s  %s  ", cptr->nam[0], unix_date(ntohl(cptr->c[59])));
 	printf("%s  ", unix_date(ntohl(cptr->c[60])));
@@ -463,12 +463,12 @@ char **argv;
 	  printf("u%-7d  ", ntohl(cptr->c[49]));
 	else
 	  printf("%-8s ", pptr->pw_name);
-	printf("%c%c%c%c ", (cptr->c[15] == 0) ? ' ' : '*', 
+	printf("%c%c%c%c ", (cptr->c[15] == 0) ? ' ' : '*',
 	       (cptr->c[61] == 0) ? ' ' : '+',
 	       (cptr->c[62] == 0) ? ' ' : '@',
 	       (cptr->c[57] == 0) ? ' ' : 'L');
 	tmp = ntohl(cptr->c[7]);
-	if (tmp == 1) 
+	if (tmp == 1)
 	  printf("CLRC\r\n");
 	else if (tmp == 2)
 	  printf("MAGE\r\n");

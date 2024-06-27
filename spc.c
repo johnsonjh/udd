@@ -122,7 +122,7 @@ int spc_main()
     if (u.c[43] > 0)
       printf("You are hovering over a pit...\r\n");
     else {
-      if (roll(3,6) + 3 > u.c[5] && 
+      if (roll(3,6) + 3 > u.c[5] &&
 	  (sqrt((double)u.c[52] /25.0) * 25.0) < roll(1,20)) {
 	printf("You fell in a pit!\r\n");
 	tmp = YEP;
@@ -200,7 +200,7 @@ int spc_main()
     printf("\r\n");
     if (tmp2 < 0)
       tmp2 = 10;
-    if (tmp2 == '\n') 
+    if (tmp2 == '\n')
       break;
     if (tmp2 != '\r') {
       printf("Sluggard!  Follow directions.\007\r\n");
@@ -219,7 +219,7 @@ int spc_main()
       printf("Poison!  Gurgle..  ..  ..   .\r\n");
       if (cbt_ohitu(u.c[15]) == YEP)
 	return(YEP);
-      printf("You only have %d hit point%s.\r\n", u.c[11], 
+      printf("You only have %d hit point%s.\r\n", u.c[11],
 	     (u.c[11] == 1) ? "" : "s");
       break;
     }
@@ -228,9 +228,9 @@ int spc_main()
       break;
     }
     if (rnd() > 0.5) {
-      if (utl_adj_ex() == YEP) 
+      if (utl_adj_ex() == YEP)
 	return(YEP);
-    } else 
+    } else
       utl_adj_st();
     break;
   case SPC_ALT:
@@ -322,7 +322,7 @@ int spc_main()
 	    break;
 	  }
 	  tmp = rnd() * rnd() * 11.0 + 1;
-	  tmp2 = rnd() * (tmp2 / ((double)u.c[12] + 1.0)) * 20.0 + 
+	  tmp2 = rnd() * (tmp2 / ((double)u.c[12] + 1.0)) * 20.0 +
 	    rnd() * 20.0 + 1;
 	  if (u.c[36+tmp] < 0)
 	    u.c[36+tmp] = tmp2;
@@ -365,7 +365,7 @@ trash:
     } else {
       u.i[7] = 0;
     }
-    if (u.i[7] != 0) 
+    if (u.i[7] != 0)
       if (trs_main() == YEP)
 	return(YEP);         /* this is safe because u.i[5] == 0 */
     u.i[5] = sav2;

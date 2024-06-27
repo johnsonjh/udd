@@ -5,7 +5,7 @@ Chuck Cranor <chuck@research.att.com>, 07-Feb-2001
 patches 1 to 6 to V5.1C were done in the fall of 1989 (V5.1C-06 on 22-Oct-89)
 V5.1C-07: 01-Feb-2001
 	fix some errors caught by function prototypes in netbsd header files
-	replace lock routines with home grown version 
+	replace lock routines with home grown version
 V5.1C-08: 07-Feb-2001
 	fix minor stdio problem when reading strings that showed up under BSD
 	add termios support
