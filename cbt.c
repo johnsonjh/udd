@@ -92,7 +92,7 @@ int cbt_main()
       m_str = roll(1, mm[m].m);
       m_arm = roll(1, m1) - 1;
       l = m1;
-      s1 = 1; /* s1 ???XXX*/
+      /* s1 = 1; / * s1 ???XXX * / */
       if (mm[m].m + m1 >= 1.2 * u.c[10] && u.c[11] > 1)
 	if (roll(1,20) <= u.c[6]) {
 	  printf("A level %d %s takes one look at you...", m1, mnam);
@@ -164,7 +164,7 @@ int cbt_main()
 	      printf("You made it!\r\n");
 	      ok = 0;
 	      while (ok == 0) {
-		ok = 1;
+		/* ok = 1; */
 		in = roll(1,4);
 		if (in == 1 && u.i[2] == 1) {
 		  ok = 0;
