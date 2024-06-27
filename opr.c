@@ -9,16 +9,21 @@
 
 #define VERS "OPR  V2.1C-03  26-Oct-89"
 
-#include "defs.h"
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/file.h>
+#include <arpa/inet.h>
+#include <time.h>
+#include "defs.h"
 
 static int loaded = NOPE;
 
-opr_main()
+int opr_main()
 
 {
   int tmp, tmp2, tmp3;

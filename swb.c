@@ -12,14 +12,19 @@
 
 #define MAIN
 
-#include "defs.h"
-#include "data.h"
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <strings.h>
+#include <string.h>
 #include <ctype.h>
 #include <pwd.h>
+#include <time.h>
+#include <arpa/inet.h>
+#include "defs.h"
+#include "data.h"
 
-main(argc, argv)
+int main(argc, argv)
 
 int argc;
 char **argv;

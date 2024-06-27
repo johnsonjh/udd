@@ -18,7 +18,7 @@ LDFLAGS	      = -lm
 
 LIBS	      =
 
-LINKER	      = cc
+LINKER	      = $(CC)
 
 MAKEFILE      = Makefile
 

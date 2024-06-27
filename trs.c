@@ -7,8 +7,11 @@
  *
  */
 
-#include "defs.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+#include "defs.h"
 
 #define TRS_NORM  0
 #define TRS_CHEST 1

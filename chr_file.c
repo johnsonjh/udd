@@ -7,11 +7,15 @@
  *
  */
 
-#include "defs.h"
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <sys/types.h>
 #include <sys/file.h>
+#include <arpa/inet.h>
 #include <signal.h>
+#include "defs.h"
 
 struct chr *c;
 int numc = -1;

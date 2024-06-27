@@ -7,10 +7,13 @@
  *
  */
 
-#include "defs.h"
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/file.h>
+#include <arpa/inet.h>
+#include "defs.h"
 
 void dlvl_init()
 

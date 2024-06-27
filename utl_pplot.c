@@ -7,7 +7,10 @@
  *
  */
 
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "defs.h"
 
 char obuf[BUFSIZ], *obp = obuf, tbuf[80], tbuf2[80], tbuf3[80];

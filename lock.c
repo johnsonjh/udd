@@ -7,11 +7,16 @@
  *
  */
 
-#include "defs.h"
+#include <unistd.h>
+#include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include <sys/types.h>
 #include <sys/param.h>
 #include <sys/stat.h>
+#include <fcntl.h>
+#include <time.h>
+#include "defs.h"
 
 /*
  * lock_open: open with simple link-based file locking.
